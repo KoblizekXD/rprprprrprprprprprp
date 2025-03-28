@@ -31,7 +31,16 @@ namespace Hra
 
         public void PridejXP(int hodnota)
         {
-            
+            if(hodnota <= 0)
+            {
+                return;
+            }
+            else
+            {
+                XP += hodnota;
+                Level += XP / 100;
+            }
+
         }
 
         public override string ToString()

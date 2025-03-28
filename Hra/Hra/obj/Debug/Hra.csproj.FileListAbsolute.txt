@@ -7,3 +7,13 @@ C:\Users\Koblizkac\Documents\Dev\CXX\rprprprrprprprprprp\Hra\Hra\bin\Debug\Hra.e
 C:\Users\Koblizkac\Documents\Dev\CXX\rprprprrprprprprprp\Hra\Hra\bin\Debug\Hra.pdb
 C:\Users\Koblizkac\Documents\Dev\CXX\rprprprrprprprprprp\Hra\Hra\obj\Debug\Hra.exe
 C:\Users\Koblizkac\Documents\Dev\CXX\rprprprrprprprprprp\Hra\Hra\obj\Debug\Hra.pdb
+G:\RPR\x\Hra\Hra\bin\Debug\Hra.exe.config
+G:\RPR\x\Hra\Hra\bin\Debug\Hra.exe
+G:\RPR\x\Hra\Hra\bin\Debug\Hra.pdb
+G:\RPR\x\Hra\Hra\obj\Debug\Hra.csproj.AssemblyReference.cache
+G:\RPR\x\Hra\Hra\obj\Debug\Hra.csproj.SuggestedBindingRedirects.cache
+G:\RPR\x\Hra\Hra\obj\Debug\Hra.Properties.Resources.resources
+G:\RPR\x\Hra\Hra\obj\Debug\Hra.csproj.GenerateResource.cache
+G:\RPR\x\Hra\Hra\obj\Debug\Hra.csproj.CoreCompileInputs.cache
+G:\RPR\x\Hra\Hra\obj\Debug\Hra.exe
+G:\RPR\x\Hra\Hra\obj\Debug\Hra.pdb

@@ -46,7 +46,7 @@ namespace UnitTestProject1
         public void CanSetValidSpecialization()
         {
             Hrac hrac = new Hrac("Hrdina", Hrac.SpecializaceType.Kouzelník, 0, 0, 0);
-            Assert.AreEqual("Kouzelník", hrac.Specializace);
+            Assert.AreEqual(Hrac.SpecializaceType.Kouzelník, hrac.Specializace);
         }
 
         [TestMethod]
@@ -60,7 +60,7 @@ namespace UnitTestProject1
         public void AddXpLevelsUp()
         {
             Hrac hrac = new Hrac("Hrdina", Hrac.SpecializaceType.Berserker, 0, 0, 0);
-            hrac.PridejXP(200);
+            hrac.PridejXP(150);
             Assert.AreEqual(2, hrac.Level);
         }
 

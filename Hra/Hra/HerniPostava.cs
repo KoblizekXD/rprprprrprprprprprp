@@ -10,7 +10,7 @@ namespace Hra
     {
         public int PoziceX { get; private set; }
         public int PoziceY { get; private set; }
-        public int Level { get; private set; } = 1;
+        public int Level { get; set; } = 1;
         private string jmeno;
 
         public HerniPostava()
