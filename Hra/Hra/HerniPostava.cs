@@ -30,7 +30,8 @@ namespace Hra
 
         public HerniPostava(string jmeno)
         {
-            
+            if (jmeno.Length < 10)
+                this.Jmeno = jmeno;
         }
 
         public virtual void ZmenaPozice(int x, int y)
