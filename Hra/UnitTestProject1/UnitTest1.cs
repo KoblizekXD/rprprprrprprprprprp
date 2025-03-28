@@ -104,7 +104,7 @@ namespace UnitTestProject1
         public void NPC_CorrectJobAssignment()
         {
             NPC npc = new NPC("Nepřítel", NPC.Prace.Nepritel, true);
-            Assert.AreEqual("nepřítel", npc.Práce);
+            Assert.AreEqual(NPC.Prace.Nepritel, npc.Práce);
         }
 
         [TestMethod]
