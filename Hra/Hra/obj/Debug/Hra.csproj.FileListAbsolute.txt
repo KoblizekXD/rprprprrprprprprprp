@@ -1,0 +1,9 @@
+C:\Users\Koblizkac\Documents\Dev\CXX\rprprprrprprprprprp\Hra\Hra\obj\Debug\Hra.csproj.AssemblyReference.cache
+C:\Users\Koblizkac\Documents\Dev\CXX\rprprprrprprprprprp\Hra\Hra\obj\Debug\Hra.Properties.Resources.resources
+C:\Users\Koblizkac\Documents\Dev\CXX\rprprprrprprprprprp\Hra\Hra\obj\Debug\Hra.csproj.GenerateResource.cache
+C:\Users\Koblizkac\Documents\Dev\CXX\rprprprrprprprprprp\Hra\Hra\obj\Debug\Hra.csproj.CoreCompileInputs.cache
+C:\Users\Koblizkac\Documents\Dev\CXX\rprprprrprprprprprp\Hra\Hra\bin\Debug\Hra.exe.config
+C:\Users\Koblizkac\Documents\Dev\CXX\rprprprrprprprprprp\Hra\Hra\bin\Debug\Hra.exe
+C:\Users\Koblizkac\Documents\Dev\CXX\rprprprrprprprprprp\Hra\Hra\bin\Debug\Hra.pdb
+C:\Users\Koblizkac\Documents\Dev\CXX\rprprprrprprprprprp\Hra\Hra\obj\Debug\Hra.exe
+C:\Users\Koblizkac\Documents\Dev\CXX\rprprprrprprprprprp\Hra\Hra\obj\Debug\Hra.pdb

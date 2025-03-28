@@ -45,21 +45,21 @@ namespace UnitTestProject1
         [TestMethod]
         public void CanSetValidSpecialization()
         {
-            Hrac hrac = new Hrac("Hrdina", "Kouzelník", 0, 0, 0);
+            Hrac hrac = new Hrac("Hrdina", Hrac.SpecializaceType.Kouzelník, 0, 0, 0);
             Assert.AreEqual("Kouzelník", hrac.Specializace);
         }
 
         [TestMethod]
         public void CannotSetInvalidSpecialization()
         {
-            Hrac hrac = new Hrac("Hrdina", "Neznámý", 0, 0, 0);
+            Hrac hrac = new Hrac("Hrdina", Hrac.SpecializaceType.Neznámý, 0, 0, 0);
             Assert.AreNotEqual("Neznámý", hrac.Specializace);
         }
 
         [TestMethod]
         public void AddXpLevelsUp()
         {
-            Hrac hrac = new Hrac("Hrdina", "Berserker", 0, 0, 0);
+            Hrac hrac = new Hrac("Hrdina", Hrac.SpecializaceType.Berserker, 0, 0, 0);
             hrac.PridejXP(200);
             Assert.AreEqual(2, hrac.Level);
         }
@@ -67,14 +67,14 @@ namespace UnitTestProject1
         [TestMethod]
         public void XpIsInitializedToZero()
         {
-            Hrac hrac = new Hrac("Hrdina", "Inženýr", 0, 0, 0);
+            Hrac hrac = new Hrac("Hrdina", Hrac.SpecializaceType.Inženýr, 0, 0, 0);
             Assert.AreEqual(0, hrac.XP);
         }
 
         [TestMethod]
         public void AddNegativeXpDoesNotChangeXp()
         {
-            Hrac hrac = new Hrac("Hrdina", "Cizák", 0, 0, 0);
+            Hrac hrac = new Hrac("Hrdina", Hrac.SpecializaceType.Cizák, 0, 0, 0);
             hrac.PridejXP(-50);
             Assert.AreEqual(0, hrac.XP);
         }
@@ -82,7 +82,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void LevelUpWithExactThreshold()
         {
-            Hrac hrac = new Hrac("Hrdina", "Kouzelník", 0, 0, 0);
+            Hrac hrac = new Hrac("Hrdina", Hrac.SpecializaceType.Kouzelník, 0, 0, 0);
             hrac.PridejXP(100);
             Assert.AreEqual(2, hrac.Level);
         }
@@ -94,7 +94,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void NPC_PositionCannotChange()
         {
-            NPC npc = new NPC("Obchodník", "obchodník", false);
+            NPC npc = new NPC("Obchodník", NPC.Prace.Obchodnik, false);
             npc.ZmenaPozice(5, 5);
             Assert.AreEqual(0, npc.PoziceX);
             Assert.AreEqual(0, npc.PoziceY);
@@ -103,28 +103,28 @@ namespace UnitTestProject1
         [TestMethod]
         public void NPC_CorrectJobAssignment()
         {
-            NPC npc = new NPC("Nepřítel", "nepřítel", true);
-            Assert.AreEqual("nepřítel", npc.Prace);
+            NPC npc = new NPC("Nepřítel", NPC.Prace.Nepritel, true);
+            Assert.AreEqual("nepřítel", npc.Práce);
         }
 
         [TestMethod]
         public void NPC_DefaultIsNotBoss()
         {
-            NPC npc = new NPC("Obchodník", "obchodník");
+            NPC npc = new NPC("Obchodník", NPC.Prace.Obyvatel);
             Assert.IsFalse(npc.Sila);
         }
 
         [TestMethod]
         public void NPC_CanBeBoss()
         {
-            NPC npc = new NPC("Boss", "nepřítel", true);
+            NPC npc = new NPC("Boss", NPC.Prace.Nepritel, true);
             Assert.IsTrue(npc.Sila);
         }
 
         [TestMethod]
         public void NPC_PositionRemainsStatic()
         {
-            NPC npc = new NPC("Statická postava", "obyvatel", false);
+            NPC npc = new NPC("Statická postava", NPC.Prace.Obyvatel, false);
             npc.ZmenaPozice(10, 10);
             Assert.AreEqual(0, npc.PoziceX);
             Assert.AreEqual(0, npc.PoziceY);

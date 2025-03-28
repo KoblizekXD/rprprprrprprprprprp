@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Hra
 {
-    internal class Hrac
+    public class Hrac: HerniPostava
     {
-        public enum SpecializaceType { Kouzelník, Berserker, Inženýr, Cizák }
+        public enum SpecializaceType { Kouzelník, Berserker, Inženýr, Cizák, Neznámý }
         public enum Oblicij { VelkýNos, Ušoplesk, MakeUp }
         public enum Vlasy { Drdol, Culík, Pleška }
         public enum BarvaVlasů { Kaštanová, Blond, Červená }
@@ -20,7 +20,7 @@ namespace Hra
         public SpecializaceType Specializace { get; set; }
         public int XP { get; private set; }
 
-        public Hráč(string jmeno, SpecializaceType specializace, Oblicij oblicij, Vlasy vlasy, BarvaVlasů barva)
+        public Hrac(string jmeno, SpecializaceType specializace, Oblicij oblicij, Vlasy vlasy, BarvaVlasů barva)
         : base(jmeno)
         {
             Specializace = specializace;
@@ -36,7 +36,7 @@ namespace Hra
 
         public override string ToString()
         {
-            
+            return "";
         }
     }
 }

@@ -8,8 +8,8 @@ namespace Hra
 {
     public class HerniPostava
     {
-        public int poziceX { get; private set; }
-        public int poziceY { get; private set; }
+        public int PoziceX { get; private set; }
+        public int PoziceY { get; private set; }
         public int Level { get; private set; } = 1;
         private string jmeno;
 
@@ -23,11 +23,9 @@ namespace Hra
 
         }
 
-
-
         public string Jmeno
         {
-          
+            get; private set;
         }
 
         public HerniPostava(string jmeno)
@@ -42,7 +40,7 @@ namespace Hra
 
         public override string ToString()
         {
-            
+            return "";
         }
 
     }
