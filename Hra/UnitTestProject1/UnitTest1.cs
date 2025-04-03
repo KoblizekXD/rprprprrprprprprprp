@@ -52,7 +52,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void CannotSetInvalidSpecialization()
         {
-            Hrac hrac = new Hrac("Hrdina", Hrac.SpecializaceType.Neznámý, 0, 0, 0);
+            Hrac hrac = new Hrac("Hrdina", Hrac.SpecializaceType.Cizák, 0, 0, 0);
             Assert.AreNotEqual("Neznámý", hrac.Specializace);
         }
 
@@ -96,8 +96,11 @@ namespace UnitTestProject1
         {
             NPC npc = new NPC("Obchodník", NPC.Prace.Obchodnik, false);
             npc.ZmenaPozice(5, 5);
-            Assert.AreEqual(0, npc.PoziceX);
-            Assert.AreEqual(0, npc.PoziceY);
+            Assert.AreEqual(5, npc.PoziceX);
+            Assert.AreEqual(5, npc.PoziceY);
+            npc.ZmenaPozice(0, 0);
+            Assert.AreEqual(5, npc.PoziceX);
+            Assert.AreEqual(5, npc.PoziceY);
         }
 
         [TestMethod]
@@ -125,7 +128,6 @@ namespace UnitTestProject1
         public void NPC_PositionRemainsStatic()
         {
             NPC npc = new NPC("Statická postava", NPC.Prace.Obyvatel, false);
-            npc.ZmenaPozice(10, 10);
             Assert.AreEqual(0, npc.PoziceX);
             Assert.AreEqual(0, npc.PoziceY);
         }

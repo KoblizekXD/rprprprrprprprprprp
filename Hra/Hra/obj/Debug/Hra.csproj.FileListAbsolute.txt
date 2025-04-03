@@ -17,3 +17,12 @@ G:\RPR\x\Hra\Hra\obj\Debug\Hra.csproj.GenerateResource.cache
 G:\RPR\x\Hra\Hra\obj\Debug\Hra.csproj.CoreCompileInputs.cache
 G:\RPR\x\Hra\Hra\obj\Debug\Hra.exe
 G:\RPR\x\Hra\Hra\obj\Debug\Hra.pdb
+E:\xxxxyys\Hra\Hra\bin\Debug\Hra.exe.config
+E:\xxxxyys\Hra\Hra\bin\Debug\Hra.exe
+E:\xxxxyys\Hra\Hra\bin\Debug\Hra.pdb
+E:\xxxxyys\Hra\Hra\obj\Debug\Hra.csproj.AssemblyReference.cache
+E:\xxxxyys\Hra\Hra\obj\Debug\Hra.Properties.Resources.resources
+E:\xxxxyys\Hra\Hra\obj\Debug\Hra.csproj.GenerateResource.cache
+E:\xxxxyys\Hra\Hra\obj\Debug\Hra.csproj.CoreCompileInputs.cache
+E:\xxxxyys\Hra\Hra\obj\Debug\Hra.exe
+E:\xxxxyys\Hra\Hra\obj\Debug\Hra.pdb

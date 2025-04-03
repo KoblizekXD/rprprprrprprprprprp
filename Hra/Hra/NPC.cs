@@ -6,21 +6,15 @@ using System.Threading.Tasks;
 
 namespace Hra
 {
-    public class NPC: HerniPostava
+    public class NPC : HerniPostava
     {
-        public enum Prace 
-        {
-            Obchodnik,
-            Nepritel,
-            Obyvatel
-        }
+        public enum Prace { Obchodnik, Nepritel, Obyvatel }
 
         public Prace Práce { get; }
-        public bool Sila { get; } 
+        public bool Sila { get; }
+        private bool _poziceNastavena = false;
 
-        private bool _poziceNastavena;
-
-        public NPC(string jmeno, Prace prace, bool jeBoss): base(jmeno)
+        public NPC(string jmeno, Prace prace, bool jeBoss) : base(jmeno)
         {
             Práce = prace;
             Sila = jeBoss;
@@ -34,12 +28,16 @@ namespace Hra
 
         public override void ZmenaPozice(int x, int y)
         {
-           
+            if (!_poziceNastavena)
+            {
+                base.ZmenaPozice(x, y);
+                _poziceNastavena = true;
+            }
         }
 
         public override string ToString()
         {
-            return "";
+            return base.ToString() + $", Práce: {Práce}, Boss: {Sila}";
         }
     }
 }
